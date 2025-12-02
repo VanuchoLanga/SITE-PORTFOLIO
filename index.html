@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional UX Designer, Front-end Developer & AI Specialist Portfolio">
+    <title>Silvano</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("czzarEWZgg4mfOllP");
+</script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <img src="/assets/logo.png" alt="Logo" class="nav__logo-img" onerror="this.src='/assets/logo.svg'">
+                <span class="nav__logo-text" style="display: none;">Portfolio</span>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">UX Designer</span>
+                        <!--<span class="hero__title-line">Front-end Developer</span> -->
+                        <!--<span class="hero__title-line">AI Specialist</span>-->
+                    </h1>
+                    <p class="hero__subtitle">
+                        Crafting human-centered digital experiences that blend design excellence, 
+                        technical precision, and AI innovation to solve complex problems.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--secondary">Contact Me</a>
+                    </div>
+                </div>
+                
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <img src="/assets/foto.png" alt="Professional Photo" class="hero__img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop'">
+                        <div class="hero__image-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <span class="hero__scroll-text">SCROLL</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </div>
+        
+        <div class="hero__background">
+            <div class="hero__background-circle hero__background-circle--1"></div>
+            <div class="hero__background-circle hero__background-circle--2"></div>
+            <div class="hero__background-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__content">
+                <div class="about__image">
+                    <div class="about__image-wrapper">
+                        <img src="/assets/foto1.png" alt="About Photo" class="about__img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop'">
+                        <div class="about__image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about__text">
+                    <h2 class="section__title">About Me</h2>
+                    <div class="about__description">
+                        <p>
+                            I'm a multidisciplinary designer and developer passionate about creating 
+                            intuitive digital experiences that merge creativity with cutting-edge technology. 
+                            With expertise in UX research, interface design, and front-end development, 
+                            I transform complex challenges into elegant solutions.
+                        </p>
+                        <p>
+                            My work is driven by a deep understanding of user behavior, modern design 
+                            principles, and emerging AI technologies. I believe in designing with purpose, 
+                            developing with precision, and innovating with intention.
+                        </p>
+                        <p>
+                            When I'm not crafting digital experiences, I'm exploring the intersection 
+                            of design and artificial intelligence, pushing the boundaries of what's 
+                            possible in modern product development.
+                        </p>
+                    </div>
+                    
+                    <div class="about__social">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social__link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social__link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://behance.net" target="_blank" rel="noopener" class="social__link" aria-label="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="social__link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services__container">
+            <h2 class="section__title section__title--center">Services</h2>
+            <p class="section__subtitle">
+                Comprehensive design and development solutions tailored to your needs
+            </p>
+            
+            <div class="services__grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-card__title">UX Research & Prototyping</h3>
+                    <p class="service-card__description">
+                        In-depth user research, persona development, and interactive prototyping 
+                        to validate design decisions and ensure user-centered solutions.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-card__title">UI Design</h3>
+                    <p class="service-card__description">
+                        Pixel-perfect interface design with strong visual hierarchy, modern aesthetics, 
+                        and comprehensive design systems for scalable products.
+                    </p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-card__title">Front-end Development</h3>
+                    <p class="service-card__description">
+                        Clean, performant code using modern frameworks and best practices. 
+                        Responsive, accessible, and optimized for all devices.
+                    </p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-card__title">AI-assisted Prototyping</h3>
+                    <p class="service-card__description">
+                        Leveraging artificial intelligence to accelerate design workflows, 
+                        generate variations, and create intelligent user experiences.
+                    </p>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-card__title">Product Optimization</h3>
+                    <p class="service-card__description">
+                        Data-driven optimization strategies, A/B testing, and continuous improvement 
+                        to maximize user engagement and business goals.
+                    </p>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-card__title">Consulting & Digital Strategy</h3>
+                    <p class="service-card__description">
+                        Strategic guidance for digital transformation, design thinking workshops, 
+                        and expert consultation on UX and development best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects__container">
+            <h2 class="section__title section__title--center">Featured Projects</h2>
+            <p class="section__subtitle">
+                Selected works showcasing design thinking and technical execution
+            </p>
+            
+            <div class="projects__grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Project 1" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">E-Commerce Redesign</h3>
+                        <p class="project-card__description">
+                            Complete UX overhaul of an e-commerce platform, increasing conversion 
+                            rates by 47% through improved navigation and checkout flow.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">UX Research</span>
+                            <span class="project-card__tag">UI Design</span>
+                            <span class="project-card__tag">Prototyping</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Project 2" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">AI Dashboard Platform</h3>
+                        <p class="project-card__description">
+                            Designed and developed an AI-powered analytics dashboard with real-time 
+                            data visualization and predictive insights.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">AI Integration</span>
+                            <span class="project-card__tag">Data Viz</span>
+                            <span class="project-card__tag">React</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Project 3" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Mobile Health App</h3>
+                        <p class="project-card__description">
+                            User-centered design for a health tracking app, focusing on accessibility 
+                            and seamless user experience across all touchpoints.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">Mobile UX</span>
+                            <span class="project-card__tag">Healthcare</span>
+                            <span class="project-card__tag">Accessibility</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 4 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop" alt="Project 4" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">SaaS Product Design</h3>
+                        <p class="project-card__description">
+                            End-to-end design system and interface for a B2B SaaS platform, 
+                            streamlining complex workflows into intuitive experiences.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">Design System</span>
+                            <span class="project-card__tag">B2B</span>
+                            <span class="project-card__tag">UX Strategy</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 5 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Project 5" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Brand Identity & Website</h3>
+                        <p class="project-card__description">
+                            Complete brand identity and web presence for a tech startup, 
+                            combining strategic positioning with stunning visual design.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">Branding</span>
+                            <span class="project-card__tag">Web Design</span>
+                            <span class="project-card__tag">Development</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 6 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Project 6" class="project-card__img">
+                        <div class="project-card__overlay">
+                            <a href="#" class="project-card__link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">AI Content Generator</h3>
+                        <p class="project-card__description">
+                            Designed an intuitive interface for an AI-powered content creation tool, 
+                            making advanced technology accessible to all users.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="project-card__tag">AI/ML</span>
+                            <span class="project-card__tag">Product Design</span>
+                            <span class="project-card__tag">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <h2 class="section__title section__title--center">Let's Work Together</h2>
+            <p class="section__subtitle">
+                Have a project in mind? Let's create something amazing together.
+            </p>
+            
+            <div class="contact__content">
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form__input" 
+                                required
+                                placeholder="Your name"
+                            >
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form__input" 
+                                required
+                                placeholder="SEUEMAIL@GMAIL.COM"
+                            >
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form__input form__textarea" 
+                                required
+                                placeholder="Tell me about your project..."
+                                rows="5"
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                        
+                        <div class="form__message" id="formMessage"></div>
+                    </form>
+                </div>
+                
+                <div class="contact__links">
+                    <h3 class="contact__links-title">Quick Connect</h3>
+                    <div class="contact__social">
+                        <a href="https://wa.me/message/UJZ7LIIHHUXPI1" target="_blank" rel="noopener" class="contact__link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/silvano-de-joaquim-langa-12928b396/" target="_blank" rel="noopener" class="contact__link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/silvano.jlanga?utm_source=qr&igsh=dGQxZThhbnhybnR3" target="_blank" rel="noopener" class="contact__link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://behance.net" target="_blank" rel="noopener" class="contact__link">
+                            <i class="fab fa-behance"></i>
+                            <span>Behance</span>
+                        </a>
+
+                        <a href="https://.net" target="_blank" rel="noopener" class="contact__link">
+                            <i class="fab fa-pinterest"></i>
+                            <span>Pinterest</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">
+                &copy; 2025 All rights reserved. Designed & Developed with passion.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>

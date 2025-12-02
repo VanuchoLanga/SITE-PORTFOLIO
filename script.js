@@ -299,6 +299,17 @@ document.addEventListener('mousemove', (e) => {
     });
 });
   
+.cursor-trail {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: normal; /* ALTERADO */
+}
+
 // ================================
 // PROJECT CARD 3D TILT EFFECT
 // ================================
